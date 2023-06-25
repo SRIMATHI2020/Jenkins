@@ -3,19 +3,19 @@ pipeline {
 
     stages {
 
-       stage{"Stage One"} {
+       stage("Stage One") {
 
            steps {
                 echo "This is stage One"
            }
        }
-       stage {"Stage two"} {
+       stage("Stage two") {
 
            steps {
                 echo "This is stage Two"
            }
        }
-       stage {"Stage three"} {
+       stage("Stage three") {
 
            steps {
                 echo "This is stage Three"
