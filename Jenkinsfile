@@ -3,22 +3,22 @@ pipeline {
 
     stages {
 
-       stage{ "stage one" } {
+       stage{"Stage One"} {
 
            steps {
-                echo "This is stage one"
+                echo "This is stage One"
            }
        }
-       stage{ "stage two" } {
+       stage {"Stage two"} {
 
            steps {
-                echo "This is stage two"
+                echo "This is stage Two"
            }
        }
-       stage{ "stage three" } {
+       stage {"Stage three"} {
 
            steps {
-                echo "This is stage three"
+                echo "This is stage Three"
            }
        }
     }
