@@ -22,6 +22,7 @@ pipeline {
 
           environment {
              ENV_URL = "maths.google.com"
+          }
            steps {
                 echo "This is stage Two"
                 echo "Name of the URL is ${ENV_URL}"
