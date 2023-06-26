@@ -21,6 +21,8 @@ pipeline {
                       echo DevOps Training
                       echo AWS Training
                       echo Name of the URL is ${ENV_URL}
+
+                      env
                 '''
            }
        }
