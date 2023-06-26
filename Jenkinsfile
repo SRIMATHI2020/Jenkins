@@ -33,7 +33,11 @@ pipeline {
        stage("Stage three") {
 
            steps {
-                echo "This is stage Three"
+                sh '''
+                    echo "This is stage Three"
+                    echo -e "\\e[32m Hai"
+
+                '''
            }
        }
     }
