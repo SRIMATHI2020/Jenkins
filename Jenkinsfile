@@ -60,5 +60,8 @@ pipeline {
         aborted {
             echo 'I will always say Hai when Job is aborted'          
         }
+        always {
+            cleanws()
+        }
     }
 }
