@@ -14,6 +14,16 @@ pipeline {
         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
     }
     stages {
+       stage('Parallel stages'){
+          parallel {
+              stage('In Parallel-1'){
+                     steps {
+                        echo "In Parallel 2"
+                        sleep 15
+                     }
+              }
+          }
+       }
        stage("Stage One") {
            steps {
                 echo "This is stage One"
